@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students</title>
+</head>
+<body>
+<h3>List of Students</h3>
+<table border="1" cellspacing="0">
+    <tr>
+        <td>Name</td>
+        <td>Surname</td>
+        <td>Subject</td>
+        <td>Mark</td>
+    </tr>
+
+    {% for student in students %}
+        <tr>
+            <td>{{ student.stName }}</td>
+            <td>{{ student.stSurname }}</td>
+            <td>{{ student.stSubject }}</td>
+            <td>{{ student.stMark }}</td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
